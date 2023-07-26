@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            width: 100%;
+
+            background-color: linear-gradient(lightblue, skyblue);
+            background-repeat: no-repeat;
+            background-size: cover;
+            size: 100%;
+
+
+        }
+
+        hr {
+            font-size: medium;
+            font-style: italic;
+            color: bisque;
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+            font-size: x-large;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #div1 {
+
+            text-align: center;
+
+        }
+
+        .main {
+            width: 60%;
+
+            background-color: antiquewhite;
+            background: transparent;
+            opacity: 0.8;
+            margin-left: 320px;
+            margin-top: 150px;
+            border: solid 2px black;
+            border-radius: 20px;
+        }
+
+        .submit {
+            margin-bottom: 20px;
+        }
+
+        #fn {
+            border-radius: 4px;
+        }
+
+        #ln {
+            border-radius: 4px;
+        }
+
+        #en {
+            border-radius: 4px;
+        }
+
+        #mn {
+            border-radius: 4px;
+        }
+
+        body {
+            background:  linear-gradient(45deg, blue, red);
+            background-repeat: no-repeat;
+            height: 100vh;
+            width:100%;
+            color: white;
+        }
+
+        label {
+            font-family: 'poppins';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2><b>REGISTRATION FORM</b></h2>
+
+        <div id="div1">
+            <form action="https://formspree.io/f/mpzgwlbl" method="post">
+                <label for="First Name">First Name: </label>
+                <input type="text" name="fn" id="fn" placeholder="First name" required>
+                <br>
+                <br>
+                <label>Last Name: </label>
+                <input type="text" name="ln" id="ln" placeholder="Last name">
+                <br>
+                <br>
+                <label>Email Id: </label>
+                <input type="email" name="en" id="en" placeholder="Email">
+                <br>
+                <br>
+                <label>Password: </label>
+                <input type="password" id="mn" placeholder="Number" required>
+                <br>
+                <br>
+                <input type="radio" name="gender" checked required>
+                <label id="g1">Male</label>
+                <input type="radio" name="gender" required>
+                <label id="gn2">Female</label>
+
+                <br>
+                <br>
+                <button class="submit" type="submit" onclick="myFunction()">Submit</button>
+                <script>
+                    function myFunction() {
+                        alert("Thank you for submitting your form!");
+                    }
+                </script>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
